@@ -7,7 +7,9 @@
     "test": "test",
     "dev": "webpack serve --open --mode development",
     "build": "webpack",
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Grigory Semakin",
   "license": "MIT",
@@ -18,6 +20,7 @@
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
@@ -30,7 +33,5 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
-  "dependencies": {
-    
-  }
+  "homepage": "https://gsemakin.github.io/drawer"
 }
