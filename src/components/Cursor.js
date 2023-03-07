@@ -11,7 +11,7 @@ export class Cursor {
 
   init() {
     this.bindAll();
-    window.addEventListener("mousemove", this.onMouseMove);
+    window.addEventListener("pointermove", this.onMouseMove);
     this.raf = requestAnimationFrame(this.render);
   }
 
