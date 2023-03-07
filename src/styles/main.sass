@@ -1,5 +1,5 @@
+@import './Cursor'
 
-/* Указываем box sizing */
 *,
 *::before,
 *::after
@@ -50,11 +50,25 @@ img
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce)
-*
-    animation-duration: 0.01ms !important
-    animation-iteration-count: 1 !important
-    transition-duration: 0.01ms !important
-    scroll-behavior: auto !important
+    *
+        animation-duration: 0.01ms !important
+        animation-iteration-count: 1 !important
+        transition-duration: 0.01ms !important
+        scroll-behavior: auto !important
 
-#js-canv
+.canv
     display: block
+    background: #ffffff
+
+    &:hover
+        cursor: none
+// .root
+//     display: flex
+//     flex-direction: column
+//     width: 100%
+//     height: 100%
+
+// .control
+//     background: #d4c8be
+//     width: 100%
+//     height: 200px

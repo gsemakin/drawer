@@ -1,0 +1,12 @@
+#cursor
+  $size: 50px
+  position: fixed
+  top: -5px
+  left: 24px
+  height: $size
+  width: $size
+  background: url('../assets/images/pen.svg')
+  background-repeat: no-repeat
+  transform: translate3d(calc(100vw * var(--cursor-x) - $size / 2),calc(100vh * var(--cursor-y) - $size / 2),0)
+
+  pointer-events: none

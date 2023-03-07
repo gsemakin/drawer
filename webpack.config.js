@@ -49,6 +49,11 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+      // шрифты и SVG
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: "asset/inline",
+      },
     ],
   },
 
